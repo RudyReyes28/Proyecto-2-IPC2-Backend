@@ -1,6 +1,7 @@
 com/rudyreyes/proyecto2/ipc2/backend/controlador/RegistrarseServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_paciente/AgendarConsultaServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/RevisionEspecialidadServlet.class
+com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_paciente/SolicitarExamenServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/ActualizarPorcentajeCobro.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/InfoInicialLab.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/TipoExamen.class
@@ -17,12 +18,14 @@ com/rudyreyes/proyecto2/ipc2/backend/data/ObtenerTipoExamen.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_paciente/RealizarRecargaServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/util/CifrarContraseña.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/InfoInicialMedico.class
+com/rudyreyes/proyecto2/ipc2/backend/data/datalab/AgregarSaldoLab.class
 com/rudyreyes/proyecto2/ipc2/backend/data/LoginBD.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Consulta.class
 com/rudyreyes/proyecto2/ipc2/backend/data/Conexion.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Medico.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/ObtenerPaciente.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/EspecialidadDelMedico.class
+com/rudyreyes/proyecto2/ipc2/backend/modelo/SolicitudExamen.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/TipoExamenLab.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Usuario.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/AgendarConsulta.class
@@ -32,9 +35,11 @@ com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/AgregarHorario.class
 com/rudyreyes/proyecto2/ipc2/backend/data/AgregarSaldoAdmin.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/HorarioMedico.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/PorcentajeCobro.class
+com/rudyreyes/proyecto2/ipc2/backend/modelo/ExamenSolicitado.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/InfoInicialMedicoServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/VerficarInicioSesion.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/ActualizarHorarioServlet.class
+com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/SolicitarExamenes.class
 com/rudyreyes/proyecto2/ipc2/backend/util/GsonUtils.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Especialidad.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/AgregarSaldoMedico.class
@@ -48,6 +53,7 @@ com/rudyreyes/proyecto2/ipc2/backend/controlador/InfoInicialLabServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datalab/RegistrarNuevoExamen.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/PrimeraSesionMedicoServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/AgregarSaldoPaciente.class
+com/rudyreyes/proyecto2/ipc2/backend/modelo/Laboratorio.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_lab/ActualizarTipoExamenServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/CambiarPorcentajeServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/RecargaPaciente.class
