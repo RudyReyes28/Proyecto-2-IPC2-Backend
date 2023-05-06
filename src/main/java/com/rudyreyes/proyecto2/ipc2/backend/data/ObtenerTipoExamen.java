@@ -45,7 +45,6 @@ public class ObtenerTipoExamen {
             
         }
         
-        Conexion.cerrarConexion();
         return tipos;
         
     }

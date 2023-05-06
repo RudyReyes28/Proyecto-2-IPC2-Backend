@@ -22,8 +22,9 @@ public class Consulta {
     String informe;
     String estado;
     FechaConsulta fechaAgendada;
+    String nombrePaciente;
 
-    public Consulta(int idConsulta, int idPaciente, int idMedico, int idEspecialidad, double porcentajeApp, String fechaCreacion, BigDecimal precio, String informe, String estado, FechaConsulta fechaAgendada) {
+    public Consulta(int idConsulta, int idPaciente, int idMedico, int idEspecialidad, double porcentajeApp, String fechaCreacion, BigDecimal precio, String informe, String estado, FechaConsulta fechaAgendada, String nombrePaciente) {
         this.idConsulta = idConsulta;
         this.idPaciente = idPaciente;
         this.idMedico = idMedico;
@@ -34,6 +35,7 @@ public class Consulta {
         this.informe = informe;
         this.estado = estado;
         this.fechaAgendada = fechaAgendada;
+        this.nombrePaciente = nombrePaciente;
     }
 
     public Consulta() {
@@ -47,11 +49,12 @@ public class Consulta {
         this.fechaAgendada = fechaAgendada;
     }
 
-    public Consulta(int idConsulta, int idPaciente, int idEspecialidad, FechaConsulta fechaAgendada) {
+    public Consulta(int idConsulta, int idPaciente, int idEspecialidad, FechaConsulta fechaAgendada, String nombrePaciente) {
         this.idConsulta = idConsulta;
         this.idPaciente = idPaciente;
         this.idEspecialidad = idEspecialidad;
         this.fechaAgendada = fechaAgendada;
+        this.nombrePaciente = nombrePaciente;
     }
 
     

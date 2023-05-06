@@ -50,19 +50,19 @@ public class LoginBD {
         Usuario usuario = null;
         
         if((usuario = obtenerUsuario(usser, "idadmin", "administrador")) != null ){
-            Conexion.cerrarConexion();
+            
             return usuario;
         }else if((usuario = obtenerUsuario(usser, "idpaciente", "paciente")) != null ){
-            Conexion.cerrarConexion();
+            
             return usuario;
         }else if((usuario = obtenerUsuario(usser, "idmedico", "medico")) != null ){
-            Conexion.cerrarConexion();
+            
             return usuario;
         }else if((usuario = obtenerUsuario(usser, "idlaboratorio", "laboratorio")) != null ){
-            Conexion.cerrarConexion();
+            
             return usuario;
         }else{
-            Conexion.cerrarConexion();
+            
             return usuario;
         }
         

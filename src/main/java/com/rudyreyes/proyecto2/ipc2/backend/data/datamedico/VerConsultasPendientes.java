@@ -5,6 +5,7 @@
 package com.rudyreyes.proyecto2.ipc2.backend.data.datamedico;
 
 import com.rudyreyes.proyecto2.ipc2.backend.data.Conexion;
+import com.rudyreyes.proyecto2.ipc2.backend.data.datapaciente.ObtenerPaciente;
 import com.rudyreyes.proyecto2.ipc2.backend.modelo.Consulta;
 import com.rudyreyes.proyecto2.ipc2.backend.modelo.ExamenSolicitado;
 import com.rudyreyes.proyecto2.ipc2.backend.modelo.FechaConsulta;
@@ -39,8 +40,8 @@ public class VerConsultasPendientes {
                 
                 //NECESITAMOS OBTENER LA FECHA AGENDADA
                 FechaConsulta fecha = fechaAgendada(idConsulta);
-                
-                Consulta con = new Consulta(idConsulta, idPaciente, idEspecialidad, fecha);
+                String nombrePaciente = ObtenerPaciente.obtenerNombre(idPaciente);
+                Consulta con = new Consulta(idConsulta, idPaciente, idEspecialidad, fecha, nombrePaciente);
                 
                 consultas.add(con);
                 

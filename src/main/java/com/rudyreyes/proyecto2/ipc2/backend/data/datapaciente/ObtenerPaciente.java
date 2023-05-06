@@ -43,4 +43,35 @@ public class ObtenerPaciente {
         }
         return usuario;
     }
+    
+    public static String obtenerNombre(int idPaciente){
+        Connection conexion = Conexion.getConnection();
+        String nombrePaciente = "";
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String query = "SELECT nombre FROM paciente WHERE idpaciente = ?";
+        
+        try {
+            
+            ps = conexion.prepareStatement(query);
+            ps.setInt(1, idPaciente);
+            
+            rs = ps.executeQuery();
+            
+            while(rs.next()){
+                nombrePaciente = rs.getString("nombre");
+                
+                
+                
+            }
+            
+            
+            
+        } catch (Exception e) {
+            System.err.println(e);
+            
+        }
+        
+        return nombrePaciente;
+    }
 }
