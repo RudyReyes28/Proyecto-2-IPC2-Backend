@@ -47,6 +47,14 @@ public class Consulta {
         this.fechaAgendada = fechaAgendada;
     }
 
+    public Consulta(int idConsulta, int idPaciente, int idEspecialidad, FechaConsulta fechaAgendada) {
+        this.idConsulta = idConsulta;
+        this.idPaciente = idPaciente;
+        this.idEspecialidad = idEspecialidad;
+        this.fechaAgendada = fechaAgendada;
+    }
+
+    
     
     
     public int getIdConsulta() {

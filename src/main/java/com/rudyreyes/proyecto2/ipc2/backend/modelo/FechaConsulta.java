@@ -21,6 +21,12 @@ public class FechaConsulta {
         this.idMedico = idMedico;
     }
 
+    public FechaConsulta(String fecha, String horaInicial, String horaFinal) {
+        this.fecha = fecha;
+        this.horaInicial = horaInicial;
+        this.horaFinal = horaFinal;
+    }
+
     
 
     public int getIdConsulta() {

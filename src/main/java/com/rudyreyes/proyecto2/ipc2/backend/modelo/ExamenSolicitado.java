@@ -29,11 +29,9 @@ public class ExamenSolicitado {
         this.resultado = resultado;
     }
 
-    public ExamenSolicitado(int idConsulta, int idExamen, BigDecimal precio, String resultado, int consulta) {
+    public ExamenSolicitado(int idConsulta, int idExamen) {
         this.idConsulta = idConsulta;
         this.idExamen = idExamen;
-        this.precio = precio;
-        this.resultado = resultado;
     }
     
     public ExamenSolicitado() {

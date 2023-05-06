@@ -8,6 +8,7 @@ com/rudyreyes/proyecto2/ipc2/backend/modelo/TipoExamen.class
 com/rudyreyes/proyecto2/ipc2/backend/data/RegistrarInfoInicialLab.class
 com/rudyreyes/proyecto2/ipc2/backend/util/Utilidades.class
 com/rudyreyes/proyecto2/ipc2/backend/data/ObtenerEspecialidades.class
+com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/VerConsultasPendientes.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/PrimeraSesionLabServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/RevisionExamenServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/RegistrarEspecialidad.class
@@ -39,6 +40,7 @@ com/rudyreyes/proyecto2/ipc2/backend/modelo/ExamenSolicitado.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/InfoInicialMedicoServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/VerficarInicioSesion.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/ActualizarHorarioServlet.class
+com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/VerConsultasServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/SolicitarExamenes.class
 com/rudyreyes/proyecto2/ipc2/backend/util/GsonUtils.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Especialidad.class
