@@ -22,6 +22,8 @@ com/rudyreyes/proyecto2/ipc2/backend/modelo/InfoInicialMedico.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datalab/AgregarSaldoLab.class
 com/rudyreyes/proyecto2/ipc2/backend/data/LoginBD.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Consulta.class
+com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_lab/SolicitudExamenPendienteServlet.class
+com/rudyreyes/proyecto2/ipc2/backend/data/datalab/SolicitudExamenesPendientes.class
 com/rudyreyes/proyecto2/ipc2/backend/data/Conexion.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Medico.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/ObtenerPaciente.class

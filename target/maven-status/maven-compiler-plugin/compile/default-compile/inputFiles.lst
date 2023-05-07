@@ -4,6 +4,7 @@
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/SolicitarEspecialidad.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/AgregarHorario.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/util/GsonUtils.java
+/home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datalab/SolicitudExamenesPendientes.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_paciente/RealizarRecargaServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/RevisionExamenServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/RevisionEspecialidadServlet.java
@@ -55,6 +56,7 @@
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/LoginBD.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/PrimeraSesionMedicoServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/InfoInicialLab.java
+/home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_lab/SolicitudExamenPendienteServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/RegistrarseServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/InfoInicialMedico.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_lab/ActualizarTipoExamenServlet.java

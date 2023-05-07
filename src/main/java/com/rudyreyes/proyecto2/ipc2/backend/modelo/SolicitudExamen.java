@@ -35,6 +35,15 @@ public class SolicitudExamen {
         this.examenes = examenes;
     }
 
+    public SolicitudExamen(int idSolicitud, int idPaciente, String fecha_solicitado, List<ExamenSolicitado> examenes) {
+        this.idSolicitud = idSolicitud;
+        this.idPaciente = idPaciente;
+        this.fecha_solicitado = fecha_solicitado;
+        this.examenes = examenes;
+    }
+    
+    
+
     public SolicitudExamen() {
     }
 

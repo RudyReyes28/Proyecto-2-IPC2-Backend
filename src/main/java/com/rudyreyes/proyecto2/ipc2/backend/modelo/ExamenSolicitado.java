@@ -7,14 +7,15 @@ package com.rudyreyes.proyecto2.ipc2.backend.modelo;
 import java.math.BigDecimal;
 
 public class ExamenSolicitado {
-    
+    int idExamenSolicitado;
     int idSolicitud;
     int idConsulta;
     int idExamen;
     BigDecimal precio;
     String resultado;
 
-    public ExamenSolicitado(int idSolicitud, int idConsulta, int idExamen, BigDecimal precio, String resultado) {
+    public ExamenSolicitado(int idExamenSolicitado, int idSolicitud, int idConsulta, int idExamen, BigDecimal precio, String resultado) {
+        this.idExamenSolicitado = idExamenSolicitado;
         this.idSolicitud = idSolicitud;
         this.idConsulta = idConsulta;
         this.idExamen = idExamen;
@@ -31,6 +32,12 @@ public class ExamenSolicitado {
 
     public ExamenSolicitado(int idConsulta, int idExamen) {
         this.idConsulta = idConsulta;
+        this.idExamen = idExamen;
+    }
+    
+    public ExamenSolicitado(int idExamenSolicitado, int idSolicitud, int idExamen) {
+        this.idExamenSolicitado = idExamenSolicitado;
+        this.idSolicitud = idSolicitud;
         this.idExamen = idExamen;
     }
     
