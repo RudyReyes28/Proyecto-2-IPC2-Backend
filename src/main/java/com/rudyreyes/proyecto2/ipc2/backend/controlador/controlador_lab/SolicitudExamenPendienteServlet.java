@@ -13,9 +13,12 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 
 /**
  *
@@ -56,7 +59,7 @@ public class SolicitudExamenPendienteServlet extends HttpServlet {
         // Obtener el nombre y tipo de archivo
         String fileName = filePart.getSubmittedFileName();
         String fileType = filePart.getContentType();
-
+        
         // Obtener los datos del archivo
         InputStream fileContent = filePart.getInputStream();
         byte[] fileData = fileContent.readAllBytes();
@@ -72,6 +75,18 @@ public class SolicitudExamenPendienteServlet extends HttpServlet {
         response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
         response.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
         response.setHeader("Access-Control-Max-Age", "86400");
+    }
+    
+    private void guardarArchivo(Part filePart, String nombreArchivo) {
+        File ruta = new File("/Descargas");
+        File file = new File(ruta, nombreArchivo);
+
+        try (InputStream input = filePart.getInputStream()) {
+            Files.copy(input, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Archivo guardado");
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
     }
 
 }

@@ -63,4 +63,30 @@ public class Utilidades {
         String fechaActualStr = formatoFecha.format(fechaActual);
         return fechaActualStr;
     }
+    
+    /*
+        try{
+            FileOutputStream fos = new FileOutputStream("/home/rudy-reyes/Descargas/documento.pdf");
+        fos.write(archivoBytes);
+        fos.close();
+        
+        }catch(Exception e){
+            e.printStackTrace();
+        }*/
+
+/*
+private void guardarArchivo(Part filePart, String nombreArchivo) {
+        File ruta = new File("/Descargas");
+        File file = new File(ruta, nombreArchivo);
+
+        try (InputStream input = filePart.getInputStream()) {
+            Files.copy(input, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Archivo guardado");
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
+    }
+*/
 }
+
+

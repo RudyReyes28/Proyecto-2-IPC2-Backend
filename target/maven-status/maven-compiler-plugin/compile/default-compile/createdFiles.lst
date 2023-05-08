@@ -17,8 +17,10 @@ com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/AgendarFechaConsulta.clas
 com/rudyreyes/proyecto2/ipc2/backend/data/RegistrarInfoInicialMedico.class
 com/rudyreyes/proyecto2/ipc2/backend/data/ObtenerTipoExamen.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_paciente/RealizarRecargaServlet.class
+com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/ObtenerExamenesSolicitados.class
 com/rudyreyes/proyecto2/ipc2/backend/util/CifrarContraseña.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/InfoInicialMedico.class
+com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_paciente/VerResultadosExamenesServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datalab/AgregarSaldoLab.class
 com/rudyreyes/proyecto2/ipc2/backend/data/LoginBD.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Consulta.class
