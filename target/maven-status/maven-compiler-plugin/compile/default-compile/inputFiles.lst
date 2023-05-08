@@ -14,6 +14,7 @@
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/EspecialidadDelMedico.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/ObtenerEspecialidades.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/SolicitudExamen.java
+/home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_paciente/SubirResultadoExamenServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/InfoInicialLabServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/AgendarConsulta.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/PrimeraSesionLabServlet.java
@@ -27,6 +28,7 @@
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/InfoInicialMedicoServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/RegistrarInfoInicialLab.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/SolicitarExamenes.java
+/home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/SubirResultadosExamen.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/AgregarEspecialidad.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/VerConsultasServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/CambiarPorcentajeServlet.java

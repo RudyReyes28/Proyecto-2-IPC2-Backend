@@ -77,16 +77,6 @@ public class SolicitudExamenPendienteServlet extends HttpServlet {
         response.setHeader("Access-Control-Max-Age", "86400");
     }
     
-    private void guardarArchivo(Part filePart, String nombreArchivo) {
-        File ruta = new File("/Descargas");
-        File file = new File(ruta, nombreArchivo);
-
-        try (InputStream input = filePart.getInputStream()) {
-            Files.copy(input, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
-            System.out.println("Archivo guardado");
-        } catch (Exception e) {
-            e.printStackTrace(System.out);
-        }
-    }
+    
 
 }

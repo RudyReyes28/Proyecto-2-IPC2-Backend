@@ -37,6 +37,7 @@ com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/AgendarConsulta.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datalab/AgregarExamen.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_lab/SolicitarNuevoExamenServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/AgregarHorario.class
+com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/SubirResultadosExamen.class
 com/rudyreyes/proyecto2/ipc2/backend/data/AgregarSaldoAdmin.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/HorarioMedico.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/PorcentajeCobro.class
@@ -60,6 +61,7 @@ com/rudyreyes/proyecto2/ipc2/backend/data/datalab/RegistrarNuevoExamen.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/PrimeraSesionMedicoServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/AgregarSaldoPaciente.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Laboratorio.class
+com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_paciente/SubirResultadoExamenServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_lab/ActualizarTipoExamenServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/CambiarPorcentajeServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/RecargaPaciente.class

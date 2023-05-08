@@ -5,6 +5,7 @@
 package com.rudyreyes.proyecto2.ipc2.backend.modelo;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  *
@@ -23,8 +24,9 @@ public class Consulta {
     String estado;
     FechaConsulta fechaAgendada;
     String nombrePaciente;
+    List<ExamenSolicitado> examenes;
 
-    public Consulta(int idConsulta, int idPaciente, int idMedico, int idEspecialidad, double porcentajeApp, String fechaCreacion, BigDecimal precio, String informe, String estado, FechaConsulta fechaAgendada, String nombrePaciente) {
+    public Consulta(int idConsulta, int idPaciente, int idMedico, int idEspecialidad, double porcentajeApp, String fechaCreacion, BigDecimal precio, String informe, String estado, FechaConsulta fechaAgendada, String nombrePaciente, List<ExamenSolicitado> examenes) {
         this.idConsulta = idConsulta;
         this.idPaciente = idPaciente;
         this.idMedico = idMedico;
@@ -36,6 +38,7 @@ public class Consulta {
         this.estado = estado;
         this.fechaAgendada = fechaAgendada;
         this.nombrePaciente = nombrePaciente;
+        this.examenes = examenes;
     }
 
     public Consulta() {
@@ -55,6 +58,12 @@ public class Consulta {
         this.idEspecialidad = idEspecialidad;
         this.fechaAgendada = fechaAgendada;
         this.nombrePaciente = nombrePaciente;
+    }
+
+    public Consulta(int idConsulta, int idMedico, List<ExamenSolicitado> examenes) {
+        this.idConsulta = idConsulta;
+        this.idMedico = idMedico;
+        this.examenes = examenes;
     }
 
     
