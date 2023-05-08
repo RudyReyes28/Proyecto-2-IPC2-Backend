@@ -66,6 +66,14 @@ public class Consulta {
         this.examenes = examenes;
     }
 
+    public Consulta(int idConsulta, int idPaciente, int idMedico, List<ExamenSolicitado> examenes) {
+        this.idConsulta = idConsulta;
+        this.idPaciente = idPaciente;
+        this.idMedico = idMedico;
+        this.examenes = examenes;
+    }
+
+    
     
     
     
