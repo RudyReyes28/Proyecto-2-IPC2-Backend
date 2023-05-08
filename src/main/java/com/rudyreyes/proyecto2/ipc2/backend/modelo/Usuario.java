@@ -48,6 +48,14 @@ public class Usuario {
         this.usuario = usuario;
         this.saldo = saldo;
     }
+
+    public Usuario(String nombre, String usuario, String correo, String fechaNacimiento, BigDecimal saldo) {
+        this.nombre = nombre;
+        this.usuario = usuario;
+        this.correo = correo;
+        this.fechaNacimiento = fechaNacimiento;
+        this.saldo = saldo;
+    }
     
     
 

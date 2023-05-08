@@ -27,6 +27,12 @@ public class FechaConsulta {
         this.horaFinal = horaFinal;
     }
 
+    public FechaConsulta(String fecha) {
+        this.fecha = fecha;
+    }
+    
+    
+
     
 
     public int getIdConsulta() {

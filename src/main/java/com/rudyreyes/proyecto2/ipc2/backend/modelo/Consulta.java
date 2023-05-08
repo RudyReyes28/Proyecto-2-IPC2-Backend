@@ -73,6 +73,17 @@ public class Consulta {
         this.examenes = examenes;
     }
 
+    public Consulta(int idConsulta, int idPaciente, int idMedico, FechaConsulta fechaAgendada, String informe, List<ExamenSolicitado> examenes) {
+        this.idConsulta = idConsulta;
+        this.idPaciente = idPaciente;
+        this.idMedico = idMedico;
+        this.fechaAgendada = fechaAgendada;
+        this.informe = informe;
+        this.examenes = examenes;
+    }
+    
+    
+
     
     
     
