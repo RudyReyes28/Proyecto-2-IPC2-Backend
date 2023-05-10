@@ -41,6 +41,20 @@ public class Consulta {
         this.examenes = examenes;
     }
 
+    public Consulta(int idConsulta, int idPaciente, int idMedico, int idEspecialidad, double porcentajeApp, String fechaCreacion, BigDecimal precio, String informe, String estado) {
+        this.idConsulta = idConsulta;
+        this.idPaciente = idPaciente;
+        this.idMedico = idMedico;
+        this.idEspecialidad = idEspecialidad;
+        this.porcentajeApp = porcentajeApp;
+        this.fechaCreacion = fechaCreacion;
+        this.precio = precio;
+        this.informe = informe;
+        this.estado = estado;
+    }
+
+    
+    
     public Consulta() {
     }
 

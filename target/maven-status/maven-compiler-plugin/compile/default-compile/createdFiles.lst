@@ -7,6 +7,7 @@ com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_lab/VerPerfilLabSer
 com/rudyreyes/proyecto2/ipc2/backend/modelo/InfoInicialLab.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/TipoExamen.class
 com/rudyreyes/proyecto2/ipc2/backend/data/RegistrarInfoInicialLab.class
+com/rudyreyes/proyecto2/ipc2/backend/data/leerArchivo/LeerAdministrador.class
 com/rudyreyes/proyecto2/ipc2/backend/util/Utilidades.class
 com/rudyreyes/proyecto2/ipc2/backend/data/ObtenerEspecialidades.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/VerConsultasPendientes.class
@@ -28,12 +29,15 @@ com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_paciente/VerResulta
 com/rudyreyes/proyecto2/ipc2/backend/data/datalab/AgregarSaldoLab.class
 com/rudyreyes/proyecto2/ipc2/backend/data/LoginBD.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Consulta.class
+com/rudyreyes/proyecto2/ipc2/backend/data/leerArchivo/LeerPaciente.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/VerPerfilAdminServlet.class
+com/rudyreyes/proyecto2/ipc2/backend/data/leerArchivo/LeerMedico.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_lab/SolicitudExamenPendienteServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/ObtenerUsuarios.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datalab/SolicitudExamenesPendientes.class
 com/rudyreyes/proyecto2/ipc2/backend/data/Conexion.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Medico.class
+com/rudyreyes/proyecto2/ipc2/backend/controlador/LeerArchivoServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/RevisarExamenesConsultaServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/ObtenerPaciente.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/EspecialidadDelMedico.class
@@ -56,9 +60,11 @@ com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/VerConsultas
 com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/SolicitarExamenes.class
 com/rudyreyes/proyecto2/ipc2/backend/util/GsonUtils.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/Especialidad.class
+com/rudyreyes/proyecto2/ipc2/backend/data/leerArchivo/LeerJson.class
 com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/AgregarSaldoMedico.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/ActualizarEspecialidadServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/VerPerfilMedicoServlet.class
+com/rudyreyes/proyecto2/ipc2/backend/data/leerArchivo/LeerLaboratorio.class
 com/rudyreyes/proyecto2/ipc2/backend/data/RegistrarseBD.class
 com/rudyreyes/proyecto2/ipc2/backend/controlador/LoginServlet.class
 com/rudyreyes/proyecto2/ipc2/backend/modelo/FechaConsulta.class

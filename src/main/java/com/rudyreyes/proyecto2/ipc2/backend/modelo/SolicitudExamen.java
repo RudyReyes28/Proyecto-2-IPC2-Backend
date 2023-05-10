@@ -25,6 +25,18 @@ public class SolicitudExamen {
         this.examenes = examenes;
     }
 
+    public SolicitudExamen(int idSolicitud, int idPaciente, int idLaboratorio, double porcentaje, String fecha_solicitado, String fecha_finalizado, String estado) {
+        this.idSolicitud = idSolicitud;
+        this.idPaciente = idPaciente;
+        this.idLaboratorio = idLaboratorio;
+        this.porcentaje = porcentaje;
+        this.fecha_solicitado = fecha_solicitado;
+        this.fecha_finalizado = fecha_finalizado;
+        this.estado = estado;
+    }
+    
+    
+
     public SolicitudExamen(int idPaciente, int idLaboratorio, double porcentaje, String fecha_solicitado, String fecha_finalizado, String estado, List<ExamenSolicitado> examenes) {
         this.idPaciente = idPaciente;
         this.idLaboratorio = idLaboratorio;

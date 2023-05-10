@@ -31,6 +31,35 @@ public class Usuario {
         this.saldo = saldo;
     }
 
+    public Usuario(int idUsuario, String tipoUsuario, String nombre, String usuario, String contraseña, String direccion, int CUI, int telefono, String correo, String fechaNacimiento, BigDecimal saldo) {
+        this.idUsuario = idUsuario;
+        this.tipoUsuario = tipoUsuario;
+        this.nombre = nombre;
+        this.usuario = usuario;
+        this.contraseña = contraseña;
+        this.direccion = direccion;
+        this.CUI = CUI;
+        this.telefono = telefono;
+        this.correo = correo;
+        this.fechaNacimiento = fechaNacimiento;
+        this.saldo = saldo;
+    }
+    
+    
+
+    public Usuario(int idUsuario, String tipoUsuario, String nombre, String usuario, String contraseña, String correo, String fechaNacimiento, BigDecimal saldo) {
+        this.idUsuario = idUsuario;
+        this.tipoUsuario = tipoUsuario;
+        this.nombre = nombre;
+        this.usuario = usuario;
+        this.contraseña = contraseña;
+        this.correo = correo;
+        this.fechaNacimiento = fechaNacimiento;
+        this.saldo = saldo;
+    }
+    
+    
+
     public Usuario(String usuario, String contraseña) {
         this.usuario = usuario;
         this.contraseña = CifrarContraseña.hash(contraseña);
