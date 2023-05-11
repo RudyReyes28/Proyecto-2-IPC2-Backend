@@ -4,6 +4,7 @@
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/SolicitarEspecialidad.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/AgregarHorario.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/RevisarExamenConsulta.java
+/home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/reportes/ReportesAdmin.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/util/GsonUtils.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datalab/SolicitudExamenesPendientes.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/VerPerfilAdminServlet.java
@@ -36,8 +37,11 @@
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/leerArchivo/LeerMedico.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/RegistrarInfoInicialLab.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/SolicitarExamenes.java
+/home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/modeloReportes/ConsultaExamenReporteAdmin.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/SubirResultadosExamen.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/AgregarEspecialidad.java
+/home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/ReportesAdminServlet.java
+/home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/modeloReportes/MedicoReporteAdmin.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/VerConsultasServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_admin/CambiarPorcentajeServlet.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datapaciente/ObtenerExamenesSolicitados.java
@@ -60,6 +64,7 @@
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/VerConsultasPendientes.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/Especialidad.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/FechaConsulta.java
+/home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/modeloReportes/LabReporteAdmin.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/modelo/Medico.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/data/datamedico/RegistrarEspecialidad.java
 /home/rudy-reyes/Escritorio/Proyectos IPC2/Proyecto2-IPC2-Backend/src/main/java/com/rudyreyes/proyecto2/ipc2/backend/controlador/controlador_medico/ActualizarEspecialidadServlet.java

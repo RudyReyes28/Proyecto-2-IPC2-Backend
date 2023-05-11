@@ -22,6 +22,7 @@ import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -180,7 +181,7 @@ public class AgendarConsulta {
         
         try{
             Connection conexion = Conexion.getConnection();
-            ps = conexion.prepareStatement(query);
+            ps = conexion.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, consulta.getIdPaciente());
             ps.setInt(2, consulta.getIdMedico());
             ps.setInt(3, consulta.getIdEspecialidad());
@@ -190,8 +191,15 @@ public class AgendarConsulta {
             ps.setString(7, "AGENDADA");
             ps.executeUpdate();
             
+            ResultSet rs = ps.getGeneratedKeys();
+            int idConsulta=0;
+            while(rs.next()){
+                idConsulta = rs.getInt(1);
+                System.out.println(idConsulta);
+            }
+            
             //AHORA NECESITO MODIFICAR LA FECHA DE LA CONSULTA Y SUBIR LA GANANCIA AL ADMIN Y AL MEDICO
-            int idConsulta = obtenerIDConsulta();
+            //int idConsulta = obtenerIDConsulta();
             consulta.getFechaAgendada().setIdConsulta(idConsulta);
             AgendarFechaConsulta.agendarFecha(consulta.getFechaAgendada());
             
@@ -217,7 +225,7 @@ public class AgendarConsulta {
         PreparedStatement ps = null;
         int idConsulta = 0;
         ResultSet rs = null;
-        String query = "SELECT  idconsulta FROM consulta";
+        String query = "SELECT  idconsulta FROM consulta ORDER BY idconsulta ASC";
         
         try {
             

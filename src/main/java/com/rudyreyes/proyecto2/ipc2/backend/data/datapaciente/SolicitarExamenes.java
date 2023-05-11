@@ -16,6 +16,7 @@ import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -65,7 +66,7 @@ public class SolicitarExamenes {
         
         try{
             Connection conexion = Conexion.getConnection();
-            ps = conexion.prepareStatement(query);
+            ps = conexion.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             ps.setInt(1, solicitud.getIdPaciente());
             ps.setInt(2, solicitud.getIdLaboratorio());
             ps.setDouble(3, porcentaje.getPorcentaje());
@@ -73,8 +74,15 @@ public class SolicitarExamenes {
             ps.setString(5, "PENDIENTE");
             ps.executeUpdate();
             
+             ResultSet rs = ps.getGeneratedKeys();
+            int idSolicitud=0;
+            while(rs.next()){
+                idSolicitud = rs.getInt(1);
+                System.out.println(idSolicitud);
+            }
+            
             //AHORA TENEMOS QUE AGREGAR LOS EXAMENES Y SUBIR LA GANANCIA AL ADMIN Y AL MEDICO
-            int idSolicitud = obtenerIDSolicitud();
+            //int idSolicitud = obtenerIDSolicitud();
             BigDecimal total = BigDecimal.ZERO;
             for(ExamenSolicitado ex: solicitud.getExamenes()){
                 ex.setIdSolicitud(idSolicitud);
@@ -103,7 +111,7 @@ public class SolicitarExamenes {
         PreparedStatement ps = null;
         int idConsulta = 0;
         ResultSet rs = null;
-        String query = "SELECT  idsolicitud FROM solicitud_examen";
+        String query = "SELECT  idsolicitud FROM solicitud_examen ORDER BY idsolicitud ASC";
         
         try {
             

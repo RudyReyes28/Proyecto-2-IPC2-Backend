@@ -26,6 +26,12 @@ public class PorcentajeCobro {
         this.idPorcentaje = idPorcentaje;
         this.porcentaje = porcentaje;
     }
+
+    public PorcentajeCobro(double porcentaje, String fechaActivacion, String fechaDesactivacion) {
+        this.porcentaje = porcentaje;
+        this.fechaActivacion = fechaActivacion;
+        this.fechaDesactivacion = fechaDesactivacion;
+    }
     
     
 
