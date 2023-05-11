@@ -18,6 +18,14 @@ public class RecargaPaciente {
         this.monto = monto;
     }
 
+    public RecargaPaciente(int idRecarga, String fecha, BigDecimal monto) {
+        this.idRecarga = idRecarga;
+        this.fecha = fecha;
+        this.monto = monto;
+    }
+    
+    
+
     public RecargaPaciente() {
     }
 
