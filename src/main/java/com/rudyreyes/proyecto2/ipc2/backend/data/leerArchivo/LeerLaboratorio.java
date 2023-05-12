@@ -86,7 +86,7 @@ public class LeerLaboratorio {
         
         PreparedStatement ps = null;
         String query = "INSERT INTO solicitud_examen(idsolicitud, idpaciente, idlaboratorio, porcentaje, "
-                + "fecha_solicitado, fecha_finalizado, estado) VALUES(?,?,?,?,?,?,?)";
+                + "fecha_solicitado, estado) VALUES(?,?,?,?,?,?)";
         
         try{
             Connection conexion = Conexion.getConnection();
@@ -96,8 +96,7 @@ public class LeerLaboratorio {
             ps.setInt(3, solicitud.getIdLaboratorio());
             ps.setDouble(4, solicitud.getPorcentaje());
             ps.setString(5, solicitud.getFecha_solicitado());
-            ps.setString(6, solicitud.getFecha_finalizado());
-            ps.setString(7, solicitud.getEstado());
+            ps.setString(6, solicitud.getEstado());
             ps.executeUpdate();
             
         }catch(Exception e){

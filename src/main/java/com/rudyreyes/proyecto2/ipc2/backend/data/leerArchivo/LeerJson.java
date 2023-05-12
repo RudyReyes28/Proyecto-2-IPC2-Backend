@@ -265,11 +265,19 @@ public class LeerJson {
                 double porcentaje = Double.parseDouble(String.valueOf(lab.get("porcentaje_aplicacion")));
                 String fechaCreacion = String.valueOf(lab.get("fecha_creacion"));
                 BigDecimal precio = BigDecimal.valueOf(Double.parseDouble(String.valueOf(lab.get("precio"))));;
-                String informe = String.valueOf(lab.get("informe_finalizacion"));
+                
+                String informe = "";
+                
                 String estado = String.valueOf(lab.get("estado"));
+                
+                if(estado.equals("FINALIZADA")){
+                    informe = String.valueOf(lab.get("informe_finalizacion"));
+                }
 
                 Consulta nuevaConsulta = new Consulta(idConsulta, idPaciente, idMedico, idEspecialidad, porcentaje, fechaCreacion, precio, informe, estado);
                 LeerPaciente.agendarConsulta(nuevaConsulta);
+                
+                Utilidades.repartirGanancias(precio, porcentaje, idMedico);
 
                 //PARA ASIGNAR LAS FECHAS
                 String fechaAgendada = String.valueOf(lab.get("fecha_agendada"));
@@ -279,7 +287,7 @@ public class LeerJson {
                 String horaFinal = Utilidades.obtenerHoraFinal(horaInicial);
                 LeerPaciente.agendarFechaConsulta(idConsulta, fecha, horaInicial, horaFinal, estado, idMedico);
 
-                if (!estado.equals("AGENDADA")) {
+                if (estado.equals("EXAMEN_PENDIENTE")) {
                     //PARA ESCRIBIR LOS EXAMENES
                     JSONArray examenes = (JSONArray) lab.get("examenes_solicitados");
                     for (Object examen : examenes) {
@@ -312,12 +320,13 @@ public class LeerJson {
                 int idLaboratorio = Integer.parseInt(String.valueOf(lab.get("laboratorio")));
                 double porcentaje = Double.parseDouble(String.valueOf(lab.get("porcentaje_aplicacion")));
                 String fechaSolicitado = String.valueOf(lab.get("fecha_solicitado"));
-                String fechaFinalizado = String.valueOf(lab.get("fecha_finalizado"));
                 String estado = String.valueOf(lab.get("estado_solicitud"));
+                
 
-                SolicitudExamen nuevaSolicitud = new SolicitudExamen(idSolicitud, idPaciente, idLaboratorio, porcentaje, fechaSolicitado, fechaFinalizado, estado);
+                SolicitudExamen nuevaSolicitud = new SolicitudExamen(idSolicitud, idPaciente, idLaboratorio, porcentaje, fechaSolicitado, estado);
                 LeerLaboratorio.solicitarExamenes(nuevaSolicitud);
                 //PARA ESCRIBIR LOS EXAMENES
+                BigDecimal total = BigDecimal.ZERO;
                 JSONArray examenes = (JSONArray) lab.get("examenes");
                 for (Object examen : examenes) {
                     JSONObject ex = (JSONObject) examen;
@@ -326,7 +335,10 @@ public class LeerJson {
                     BigDecimal precio = BigDecimal.valueOf(Double.parseDouble(String.valueOf(ex.get("precio"))));;
                     LeerLaboratorio.agregarExamenes(idSolicitud, idExamen, precio);
 
+                    total = total.add(precio);
                 }
+                
+                Utilidades.repartirGananciasLab(total, porcentaje, idLaboratorio);
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -4,9 +4,13 @@
  */
 package com.rudyreyes.proyecto2.ipc2.backend.util;
 
+import com.rudyreyes.proyecto2.ipc2.backend.data.AgregarSaldoAdmin;
+import com.rudyreyes.proyecto2.ipc2.backend.data.datalab.AgregarSaldoLab;
+import com.rudyreyes.proyecto2.ipc2.backend.data.datamedico.AgregarSaldoMedico;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -109,6 +113,22 @@ public class Utilidades {
         return nuevoCui;
     }
 
+    public static void repartirGanancias(BigDecimal precioConsulta, double porcentaje, int idMedico){
+        BigDecimal saldoAdmin = precioConsulta.multiply(BigDecimal.valueOf(porcentaje));
+            System.out.println("saldo admin" + saldoAdmin);
+            AgregarSaldoAdmin.sumarSaldo(saldoAdmin);
+            //AHORA TOCA MEDICO
+            BigDecimal saldoMedico = precioConsulta.subtract(saldoAdmin);
+            System.out.println("saldo medico" +saldoMedico);
+            AgregarSaldoMedico.sumarSaldo(saldoMedico, idMedico);
+    }
     
-    
+    public static void repartirGananciasLab(BigDecimal total, double porcentaje, int idLab){
+        //AHORA TOCA LAS GANANCIAS
+            BigDecimal saldoAdmin = total.multiply(BigDecimal.valueOf(porcentaje));
+            AgregarSaldoAdmin.sumarSaldo(saldoAdmin);
+            //AHORA TOCA LABORATORIO
+            BigDecimal saldoMedico = total.subtract(saldoAdmin);
+            AgregarSaldoLab.sumarSaldo(saldoMedico, idLab);
+    }
 }
